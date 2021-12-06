@@ -1,0 +1,34 @@
+{
+  "parent": "foodexpansion:recipes/root",
+  "rewards": {
+    "recipes": [
+      "foodexpansion:beef_sandwich"
+    ]
+  },
+  "criteria": {
+    "has_cooked_beef": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:cooked_beef"
+            ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "foodexpansion:beef_sandwich"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_cooked_beef",
+      "has_the_recipe"
+    ]
+  ]
+}

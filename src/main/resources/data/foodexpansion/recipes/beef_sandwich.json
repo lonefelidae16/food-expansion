@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "B",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bread"
+    },
+    "B": {
+      "item": "minecraft:cooked_beef"
+    }
+  },
+  "result": {
+    "item": "foodexpansion:beef_sandwich",
+    "count": 1
+  }
+}

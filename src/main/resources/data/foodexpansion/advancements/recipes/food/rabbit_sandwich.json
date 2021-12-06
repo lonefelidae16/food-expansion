@@ -1,0 +1,29 @@
+{
+  "parent": "foodexpansion:recipes/root",
+  "rewards": {
+    "recipes": [
+      "foodexpansion:rabbit_sandwich"
+    ]
+  },
+  "criteria": {
+    "has_cooked_rabbit": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [ "minecraft:cooked_rabbit" ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "foodexpansion:rabbit_sandwich"
+      }
+    }
+  },
+  "requirements": [
+    [ "has_cooked_rabbit", "has_the_recipe" ]
+  ]
+}

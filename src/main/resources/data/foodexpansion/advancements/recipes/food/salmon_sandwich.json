@@ -1,0 +1,29 @@
+{
+  "parent": "foodexpansion:recipes/root",
+  "rewards": {
+    "recipes": [
+      "foodexpansion:salmon_sandwich"
+    ]
+  },
+  "criteria": {
+    "has_cooked_salmon": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [ "minecraft:cooked_salmon" ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "foodexpansion:salmon_sandwich"
+      }
+    }
+  },
+  "requirements": [
+    [ "has_cooked_salmon", "has_the_recipe" ]
+  ]
+}

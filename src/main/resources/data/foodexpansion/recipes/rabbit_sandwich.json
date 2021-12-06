@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#",
+    "R",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bread"
+    },
+    "R": {
+      "item": "minecraft:cooked_rabbit"
+    }
+  },
+  "result": {
+    "item": "foodexpansion:rabbit_sandwich",
+    "count": 1
+  }
+}

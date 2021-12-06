@@ -1,0 +1,29 @@
+{
+  "parent": "foodexpansion:recipes/root",
+  "rewards": {
+    "recipes": [
+      "foodexpansion:glow_berries_pie"
+    ]
+  },
+  "criteria": {
+    "has_glow_berries": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [ "minecraft:glow_berries" ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "foodexpansion:glow_berries_pie"
+      }
+    }
+  },
+  "requirements": [
+    [ "has_glow_berries", "has_the_recipe" ]
+  ]
+}

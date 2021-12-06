@@ -1,0 +1,29 @@
+{
+  "parent": "foodexpansion:recipes/root",
+  "rewards": {
+    "recipes": [
+      "foodexpansion:fish_sandwich"
+    ]
+  },
+  "criteria": {
+    "has_cooked_cod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [ "minecraft:cooked_cod" ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "foodexpansion:fish_sandwich"
+      }
+    }
+  },
+  "requirements": [
+    [ "has_cooked_cod", "has_the_recipe" ]
+  ]
+}

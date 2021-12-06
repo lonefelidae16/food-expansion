@@ -1,0 +1,29 @@
+{
+  "parent": "foodexpansion:recipes/root",
+  "rewards": {
+    "recipes": [
+      "foodexpansion:meat_pie"
+    ]
+  },
+  "criteria": {
+    "has_cooked_beef": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [ "minecraft:cooked_beef" ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "foodexpansion:meat_pie"
+      }
+    }
+  },
+  "requirements": [
+    [ "has_cooked_beef", "has_the_recipe" ]
+  ]
+}

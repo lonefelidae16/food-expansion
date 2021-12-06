@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#C#",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:wheat"
+    },
+    "C": {
+      "item": "foodexpansion:custard_cream"
+    }
+  },
+  "result": {
+    "item": "foodexpansion:cream_bun",
+    "count": 1
+  }
+}

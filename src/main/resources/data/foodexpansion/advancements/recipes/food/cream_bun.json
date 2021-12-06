@@ -1,0 +1,29 @@
+{
+  "parent": "foodexpansion:recipes/root",
+  "rewards": {
+    "recipes": [
+      "foodexpansion:cream_bun"
+    ]
+  },
+  "criteria": {
+    "has_custard": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [ "foodexpansion:custard_cream" ]
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "foodexpansion:cream_bun"
+      }
+    }
+  },
+  "requirements": [
+    [ "has_custard", "has_the_recipe" ]
+  ]
+}
