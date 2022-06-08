@@ -71,15 +71,4 @@ public class ItemInitializer {
         // 中間素材
         Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "custard_cream"), ItemInitializer.CUSTARD_CREAM);
     }
-
-    @Contract(pure = true)
-    public static @NotNull Iterable<Item> getAllCustomItems() {
-        return Arrays.stream(ItemInitializer.class.getFields()).map(field -> {
-            try {
-                return (Item) field.get(ItemInitializer.class);
-            } catch (IllegalAccessException | ClassCastException e) {
-                throw new RuntimeException(e);
-            }
-        }).collect(Collectors.toSet());
-    }
 }
