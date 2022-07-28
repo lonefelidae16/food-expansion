@@ -5,27 +5,21 @@ import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
-
-import java.util.Arrays;
-import java.util.stream.Collectors;
 
 
 public class ItemInitializer {
-    public static final FoodItemBase CREAM_BUN;
-    public static final FoodItemBase BEEF_SANDWICH;
-    public static final FoodItemBase PORK_SANDWICH;
-    public static final FoodItemBase MUTTON_SANDWICH;
-    public static final FoodItemBase CHICKEN_SANDWICH;
-    public static final FoodItemBase SALMON_SANDWICH;
-    public static final FoodItemBase FISH_SANDWICH;
-    public static final FoodItemBase RABBIT_SANDWICH;
-    public static final FoodItemBase MEAT_PIE;
-    public static final FoodItemBase APPLE_PIE;
-    public static final FoodItemBase CARROT_PIE;
-    public static final FoodItemBase GLOW_BERRIES_PIE;
-    public static final FoodItemBase SWEET_BERRIES_PIE;
+    public static final Item CREAM_BUN;
+    public static final Item BEEF_SANDWICH;
+    public static final Item PORK_SANDWICH;
+    public static final Item MUTTON_SANDWICH;
+    public static final Item CHICKEN_SANDWICH;
+    public static final Item SALMON_SANDWICH;
+    public static final Item FISH_SANDWICH;
+    public static final Item RABBIT_SANDWICH;
+    public static final Item APPLE_PIE;
+    public static final Item CARROT_PIE;
+    public static final Item GLOW_BERRIES_PIE;
+    public static final Item SWEET_BERRIES_PIE;
     public static final Item CUSTARD_CREAM;
 
     static {
@@ -39,7 +33,6 @@ public class ItemInitializer {
         RABBIT_SANDWICH = new BreadItem((new FoodComponent.Builder()).hunger(8).saturationModifier(.9f).build());
         CREAM_BUN = new BreadItem((new FoodComponent.Builder()).hunger(8).saturationModifier(.7f).build());
 
-        MEAT_PIE = new PieItem((new FoodComponent.Builder()).hunger(8).saturationModifier(1f).build());
         APPLE_PIE = new PieItem((new FoodComponent.Builder()).hunger(8).saturationModifier(.38f).build());
         CARROT_PIE = new PieItem((new FoodComponent.Builder()).hunger(8).saturationModifier(.3f).build());
         GLOW_BERRIES_PIE = new PieItem((new FoodComponent.Builder()).hunger(7).saturationModifier(.3f).build());
@@ -62,7 +55,6 @@ public class ItemInitializer {
         Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "salmon_sandwich"), ItemInitializer.SALMON_SANDWICH);
         Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "fish_sandwich"), ItemInitializer.FISH_SANDWICH);
         Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "rabbit_sandwich"), ItemInitializer.RABBIT_SANDWICH);
-        Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "meat_pie"), ItemInitializer.MEAT_PIE);
         Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "apple_pie"), ItemInitializer.APPLE_PIE);
         Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "carrot_pie"), ItemInitializer.CARROT_PIE);
         Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "glow_berries_pie"), ItemInitializer.GLOW_BERRIES_PIE);

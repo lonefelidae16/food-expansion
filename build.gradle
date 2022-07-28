@@ -48,29 +48,6 @@ tasks.withType(JavaCompile).configureEach {
 	it.options.release = 17
 }
 
-// Auto generate VERSION_STRING
-task generateJava {
-	ext.outputDir = "$buildDir/generated/java"
-	ext.targetDir = maven_group.replaceAll('\\.', '/')
-	inputs.property('version', project.version)
-	outputs.dir outputDir
-	doLast {
-		mkdir "$outputDir/$targetDir"
-		file("$outputDir/$targetDir/BuildProperties.java").text =
-				"""|package $maven_group;
-               |public class BuildProperties {
-               |    public static final String VERSION = "${project.version}";
-               |}""".stripMargin()
-	}
-}
-// TODO: Could not get unknown property 'sourcesJar' for root project '${project.name}' of type org.gradle.api.Project.
-// TODO: Execution optimizations have been disabled for task ':sourcesJar' to ensure correctness;
-//       Task ':sourcesJar' uses this output of task ':generateJava' without declaring an explicit or implicit dependency.
-//sourcesJar.dependsOn(generateJava)
-compileJava.dependsOn(generateJava)
-// Add sourceSets
-sourceSets.main.java.srcDir generateJava.outputDir
-
 java {
 	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
 	// if it is present.

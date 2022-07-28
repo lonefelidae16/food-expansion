@@ -8,7 +8,6 @@ import me.lonefelidae16.foodexpansion.FoodExpansion;
 import me.lonefelidae16.foodexpansion.items.BreadItem;
 import me.lonefelidae16.foodexpansion.items.CreamItem;
 import me.lonefelidae16.foodexpansion.items.PieItem;
-import net.minecraft.client.sound.Sound;
 import net.minecraft.util.Identifier;
 
 public class ExtraSoundsGenerator {
