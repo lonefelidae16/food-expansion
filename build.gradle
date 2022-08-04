@@ -1,7 +1,10 @@
 plugins {
 	id 'fabric-loom' version '0.12-SNAPSHOT'
 	id 'maven-publish'
+	id 'com.jfrog.artifactory' version '4.+'
 }
+
+apply from: 'https://gitlab.kow08absty.com/-/snippets/1/raw/main/properties-reader.gradle'
 
 sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
@@ -76,5 +79,26 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
+	}
+}
+
+artifactory {
+	contextUrl = 'https://artifactory.kow08absty.com/artifactory'
+
+	publish {
+		repository {
+			repoKey = project.localProperties.get('artifactory_repo_key')
+			username = project.localProperties.get('artifactory_user')
+			password = project.localProperties.get('artifactory_password')
+			maven = true
+		}
+		defaults {
+			publications('mavenJava')
+			publishArtifacts = true
+			publishPom = true
+			publishBuildInfo = false
+
+			properties = ['qa.level': 'basic', 'dev.team': 'core']
+		}
 	}
 }

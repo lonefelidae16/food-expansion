@@ -6,5 +6,9 @@ pluginManagement {
         }
         mavenCentral()
         gradlePluginPortal()
+        maven {
+            name = 'artifactory'
+            url = 'https://plugins.gradle.org/m2/'
+        }
     }
 }
