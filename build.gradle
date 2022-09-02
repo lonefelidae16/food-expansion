@@ -69,7 +69,7 @@ jar {
 	from("LICENSE") {
 		rename { "${it}_${project.archivesBaseName}"}
 	}
-	exclude("assets/foodexpansion/raw/**")
+	exclude("assets/**/*.xcf")
 }
 
 // configure the maven publication
