@@ -1,6 +1,10 @@
 package me.lonefelidae16.foodexpansion.items;
 
 import me.lonefelidae16.foodexpansion.FoodExpansion;
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffectCategory;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
@@ -35,7 +39,7 @@ public class ItemInitializer {
 
         APPLE_PIE = new PieItem((new FoodComponent.Builder()).hunger(8).saturationModifier(.38f).build());
         CARROT_PIE = new PieItem((new FoodComponent.Builder()).hunger(8).saturationModifier(.3f).build());
-        GLOW_BERRIES_PIE = new PieItem((new FoodComponent.Builder()).hunger(7).saturationModifier(.3f).build());
+        GLOW_BERRIES_PIE = new PieItem((new FoodComponent.Builder()).hunger(7).saturationModifier(.3f).statusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 20 * 10), 1).build());
         SWEET_BERRIES_PIE = new PieItem((new FoodComponent.Builder()).hunger(7).saturationModifier(.3f).build());
 
         // materials
