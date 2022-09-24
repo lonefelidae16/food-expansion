@@ -21,7 +21,7 @@ repositories {
 	// for more information about repositories.
 	maven {
 		name = "stashymane's repo"
-		url = "https://repo.stashy.dev"
+		url = "https://repo.stashy.dev/releases/"
 	}
 	maven {
 		url = "https://storage.googleapis.com/devan-maven/"
