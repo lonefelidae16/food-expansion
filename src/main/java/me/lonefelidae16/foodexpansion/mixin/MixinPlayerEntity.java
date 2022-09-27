@@ -1,6 +1,6 @@
 package me.lonefelidae16.foodexpansion.mixin;
 
-import me.lonefelidae16.foodexpansion.sounds.SoundEvents;
+import me.lonefelidae16.foodexpansion.sound.SoundEvents;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.sound.SoundEvent;
 import org.spongepowered.asm.mixin.Mixin;
@@ -28,6 +28,6 @@ public abstract class MixinPlayerEntity {
             index = 4
     )
     private SoundEvent foodexpansion$eatFood_arg4(SoundEvent soundEvent) {
-        return SoundEvents.EV_SWALLOW;
+        return SoundEvents.SWALLOW;
     }
 }

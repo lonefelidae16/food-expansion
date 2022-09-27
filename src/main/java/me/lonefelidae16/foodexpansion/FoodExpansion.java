@@ -2,7 +2,7 @@ package me.lonefelidae16.foodexpansion;
 
 import com.mojang.logging.LogUtils;
 import me.lonefelidae16.foodexpansion.items.ItemInitializer;
-import me.lonefelidae16.foodexpansion.sounds.SoundsInitializer;
+import me.lonefelidae16.foodexpansion.sound.SoundsInitializer;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 
