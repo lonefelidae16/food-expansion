@@ -22,7 +22,6 @@
     ]
   },
   "mixins": [
-    "foodexpansion.mixins.json"
   ],
 
   "depends": {

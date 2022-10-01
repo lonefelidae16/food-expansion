@@ -1,0 +1,7 @@
+{
+  "entity.player.burp": {
+    "replace": true,
+    "subtitle": "subtitles.entity.player.swallow",
+    "sounds": [ "foodexpansion:swallow" ]
+  }
+}
