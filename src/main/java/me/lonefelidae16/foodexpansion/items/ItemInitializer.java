@@ -1,8 +1,7 @@
 package me.lonefelidae16.foodexpansion.items;
 
 import me.lonefelidae16.foodexpansion.FoodExpansion;
-import net.minecraft.entity.effect.StatusEffect;
-import net.minecraft.entity.effect.StatusEffectCategory;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
@@ -63,6 +62,19 @@ public class ItemInitializer {
         Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "carrot_pie"), ItemInitializer.CARROT_PIE);
         Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "glow_berries_pie"), ItemInitializer.GLOW_BERRIES_PIE);
         Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "sweet_berries_pie"), ItemInitializer.SWEET_BERRIES_PIE);
+
+        CompostingChanceRegistry.INSTANCE.add(ItemInitializer.CREAM_BUN, 1.0f);
+        CompostingChanceRegistry.INSTANCE.add(ItemInitializer.BEEF_SANDWICH, 1.0f);
+        CompostingChanceRegistry.INSTANCE.add(ItemInitializer.PORK_SANDWICH, 1.0f);
+        CompostingChanceRegistry.INSTANCE.add(ItemInitializer.MUTTON_SANDWICH, 1.0f);
+        CompostingChanceRegistry.INSTANCE.add(ItemInitializer.CHICKEN_SANDWICH, 1.0f);
+        CompostingChanceRegistry.INSTANCE.add(ItemInitializer.SALMON_SANDWICH, 1.0f);
+        CompostingChanceRegistry.INSTANCE.add(ItemInitializer.FISH_SANDWICH, 1.0f);
+        CompostingChanceRegistry.INSTANCE.add(ItemInitializer.RABBIT_SANDWICH, 1.0f);
+        CompostingChanceRegistry.INSTANCE.add(ItemInitializer.APPLE_PIE, 1.0f);
+        CompostingChanceRegistry.INSTANCE.add(ItemInitializer.CARROT_PIE, 1.0f);
+        CompostingChanceRegistry.INSTANCE.add(ItemInitializer.GLOW_BERRIES_PIE, 1.0f);
+        CompostingChanceRegistry.INSTANCE.add(ItemInitializer.SWEET_BERRIES_PIE, 1.0f);
 
         // 中間素材
         Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "custard_cream"), ItemInitializer.CUSTARD_CREAM);
