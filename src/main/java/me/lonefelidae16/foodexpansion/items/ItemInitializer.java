@@ -6,8 +6,9 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 
 public class ItemInitializer {
@@ -50,18 +51,18 @@ public class ItemInitializer {
      */
     public static void init() {
         // アイテムいろいろ
-        Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "cream_bun"), ItemInitializer.CREAM_BUN);
-        Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "beef_sandwich"), ItemInitializer.BEEF_SANDWICH);
-        Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "pork_sandwich"), ItemInitializer.PORK_SANDWICH);
-        Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "mutton_sandwich"), ItemInitializer.MUTTON_SANDWICH);
-        Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "chicken_sandwich"), ItemInitializer.CHICKEN_SANDWICH);
-        Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "salmon_sandwich"), ItemInitializer.SALMON_SANDWICH);
-        Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "fish_sandwich"), ItemInitializer.FISH_SANDWICH);
-        Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "rabbit_sandwich"), ItemInitializer.RABBIT_SANDWICH);
-        Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "apple_pie"), ItemInitializer.APPLE_PIE);
-        Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "carrot_pie"), ItemInitializer.CARROT_PIE);
-        Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "glow_berries_pie"), ItemInitializer.GLOW_BERRIES_PIE);
-        Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "sweet_berries_pie"), ItemInitializer.SWEET_BERRIES_PIE);
+        Registry.register(Registries.ITEM, new Identifier(FoodExpansion.MOD_ID, "cream_bun"), ItemInitializer.CREAM_BUN);
+        Registry.register(Registries.ITEM, new Identifier(FoodExpansion.MOD_ID, "beef_sandwich"), ItemInitializer.BEEF_SANDWICH);
+        Registry.register(Registries.ITEM, new Identifier(FoodExpansion.MOD_ID, "pork_sandwich"), ItemInitializer.PORK_SANDWICH);
+        Registry.register(Registries.ITEM, new Identifier(FoodExpansion.MOD_ID, "mutton_sandwich"), ItemInitializer.MUTTON_SANDWICH);
+        Registry.register(Registries.ITEM, new Identifier(FoodExpansion.MOD_ID, "chicken_sandwich"), ItemInitializer.CHICKEN_SANDWICH);
+        Registry.register(Registries.ITEM, new Identifier(FoodExpansion.MOD_ID, "salmon_sandwich"), ItemInitializer.SALMON_SANDWICH);
+        Registry.register(Registries.ITEM, new Identifier(FoodExpansion.MOD_ID, "fish_sandwich"), ItemInitializer.FISH_SANDWICH);
+        Registry.register(Registries.ITEM, new Identifier(FoodExpansion.MOD_ID, "rabbit_sandwich"), ItemInitializer.RABBIT_SANDWICH);
+        Registry.register(Registries.ITEM, new Identifier(FoodExpansion.MOD_ID, "apple_pie"), ItemInitializer.APPLE_PIE);
+        Registry.register(Registries.ITEM, new Identifier(FoodExpansion.MOD_ID, "carrot_pie"), ItemInitializer.CARROT_PIE);
+        Registry.register(Registries.ITEM, new Identifier(FoodExpansion.MOD_ID, "glow_berries_pie"), ItemInitializer.GLOW_BERRIES_PIE);
+        Registry.register(Registries.ITEM, new Identifier(FoodExpansion.MOD_ID, "sweet_berries_pie"), ItemInitializer.SWEET_BERRIES_PIE);
 
         CompostingChanceRegistry.INSTANCE.add(ItemInitializer.CREAM_BUN, 1.0f);
         CompostingChanceRegistry.INSTANCE.add(ItemInitializer.BEEF_SANDWICH, 1.0f);
@@ -77,6 +78,6 @@ public class ItemInitializer {
         CompostingChanceRegistry.INSTANCE.add(ItemInitializer.SWEET_BERRIES_PIE, 1.0f);
 
         // 中間素材
-        Registry.register(Registry.ITEM, new Identifier(FoodExpansion.MOD_ID, "custard_cream"), ItemInitializer.CUSTARD_CREAM);
+        Registry.register(Registries.ITEM, new Identifier(FoodExpansion.MOD_ID, "custard_cream"), ItemInitializer.CUSTARD_CREAM);
     }
 }

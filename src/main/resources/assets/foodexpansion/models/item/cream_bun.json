@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "foodexpansion:items/cream_bun"
+    "layer0": "foodexpansion:item/cream_bun"
   }
 }

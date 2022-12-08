@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "foodexpansion:items/rabbit_sandwich"
+    "layer0": "foodexpansion:item/rabbit_sandwich"
   }
 }

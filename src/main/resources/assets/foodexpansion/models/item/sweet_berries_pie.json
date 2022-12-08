@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "foodexpansion:items/sweet_berries_pie"
+    "layer0": "foodexpansion:item/sweet_berries_pie"
   }
 }

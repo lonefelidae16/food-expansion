@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "foodexpansion:items/fish_sandwich"
+    "layer0": "foodexpansion:item/fish_sandwich"
   }
 }

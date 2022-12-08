@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "foodexpansion:items/glow_berries_pie"
+    "layer0": "foodexpansion:item/glow_berries_pie"
   }
 }
