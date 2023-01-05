@@ -6,7 +6,7 @@
     ]
   },
   "criteria": {
-    "has_custard": {
+    "has_ingredients": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -24,6 +24,6 @@
     }
   },
   "requirements": [
-    [ "has_custard", "has_the_recipe" ]
+    [ "has_ingredients", "has_the_recipe" ]
   ]
 }

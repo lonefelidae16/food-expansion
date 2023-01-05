@@ -6,7 +6,7 @@
     ]
   },
   "criteria": {
-    "has_cooked_beef": {
+    "has_ingredients": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -27,7 +27,7 @@
   },
   "requirements": [
     [
-      "has_cooked_beef",
+      "has_ingredients",
       "has_the_recipe"
     ]
   ]

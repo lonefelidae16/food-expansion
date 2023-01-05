@@ -8,6 +8,14 @@
   "item.foodexpansion.salmon_sandwich": "焼き鮭サンドイッチ",
   "item.foodexpansion.fish_sandwich": "焼き鱈サンドイッチ",
   "item.foodexpansion.rabbit_sandwich": "焼き兎肉サンドイッチ",
+
+  "item.foodexpansion.beef_stew": "ビーフシチュー",
+  "item.foodexpansion.pork_stew": "豚肉のシチュー",
+  "item.foodexpansion.mutton_stew": "羊肉のシチュー",
+  "item.foodexpansion.salmon_stew": "鮭のシチュー",
+  "item.foodexpansion.chicken_stew": "鶏肉のシチュー",
+  "item.foodexpansion.fish_stew": "鱈のシチュー",
+
   "item.foodexpansion.meat_pie": "ミートパイ",
   "item.foodexpansion.apple_pie": "アップルパイ",
   "item.foodexpansion.carrot_pie": "にんじんパイ",

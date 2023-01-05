@@ -1,18 +1,28 @@
 {
-  "item.foodexpansion.custard_cream": "Custard cream",
-  "item.foodexpansion.cream_bun": "Cream bun",
-  "item.foodexpansion.beef_sandwich": "Beef sandwich",
-  "item.foodexpansion.pork_sandwich": "Pork sandwich",
-  "item.foodexpansion.mutton_sandwich": "Mutton sandwich",
-  "item.foodexpansion.chicken_sandwich": "Chicken sandwich",
-  "item.foodexpansion.salmon_sandwich": "Salmon sandwich",
-  "item.foodexpansion.fish_sandwich": "Fish sandwich",
-  "item.foodexpansion.rabbit_sandwich": "Rabbit sandwich",
-  "item.foodexpansion.meat_pie": "Meat pie",
-  "item.foodexpansion.apple_pie": "Apple pie",
-  "item.foodexpansion.carrot_pie": "Carrot pie",
-  "item.foodexpansion.glow_berries_pie": "Glowing pie",
-  "item.foodexpansion.sweet_berries_pie": "Berries pie",
+  "itemGroup.foodexpansion.food": "Food Expansion",
+
+  "item.foodexpansion.custard_cream": "Custard Cream",
+  "item.foodexpansion.cream_bun": "Cream Bun",
+  "item.foodexpansion.beef_sandwich": "Beef Sandwich",
+  "item.foodexpansion.pork_sandwich": "Pork Sandwich",
+  "item.foodexpansion.mutton_sandwich": "Mutton Sandwich",
+  "item.foodexpansion.chicken_sandwich": "Chicken Sandwich",
+  "item.foodexpansion.salmon_sandwich": "Salmon Sandwich",
+  "item.foodexpansion.fish_sandwich": "Fish Sandwich",
+  "item.foodexpansion.rabbit_sandwich": "Rabbit Sandwich",
+
+  "item.foodexpansion.beef_stew": "Beef Stew",
+  "item.foodexpansion.pork_stew": "Pork Stew",
+  "item.foodexpansion.mutton_stew": "Mutton Stew",
+  "item.foodexpansion.salmon_stew": "Salmon Stew",
+  "item.foodexpansion.chicken_stew": "Chicken Stew",
+  "item.foodexpansion.fish_stew": "Fish Stew",
+
+  "item.foodexpansion.meat_pie": "Meat Pie",
+  "item.foodexpansion.apple_pie": "Apple Pie",
+  "item.foodexpansion.carrot_pie": "Carrot Pie",
+  "item.foodexpansion.glow_berries_pie": "Glowing Pie",
+  "item.foodexpansion.sweet_berries_pie": "Berries Pie",
 
   "subtitles.entity.player.swallow": "Swallow"
 }

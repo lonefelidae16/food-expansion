@@ -6,42 +6,12 @@
     ]
   },
   "criteria": {
-    "has_wheat": {
+    "has_ingredients": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": [ "minecraft:wheat" ]
-          }
-        ]
-      }
-    },
-    "has_eggs": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [ "minecraft:egg" ]
-          }
-        ]
-      }
-    },
-    "has_milk_bucket": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [ "minecraft:milk_bucket" ]
-          }
-        ]
-      }
-    },
-    "has_sugar": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "items": [ "minecraft:sugar" ]
+            "items": [ "minecraft:wheat", "minecraft:egg", "minecraft:milk_bucket", "minecraft:sugar" ]
           }
         ]
       }
@@ -54,6 +24,6 @@
     }
   },
   "requirements": [
-    [ "has_wheat", "has_eggs", "has_milk_bucket", "has_sugar", "has_the_recipe" ]
+    [ "has_ingredients", "has_the_recipe" ]
   ]
 }
