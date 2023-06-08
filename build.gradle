@@ -1,7 +1,7 @@
 plugins {
-	id 'fabric-loom' version '1.0-SNAPSHOT'
+	id 'fabric-loom' version '1.2-SNAPSHOT'
 	id 'maven-publish'
-	id 'com.jfrog.artifactory' version '4.29.0'
+	id 'com.jfrog.artifactory' version '4.31.5'
 }
 
 apply from: 'https://gitlab.kow08absty.com/-/snippets/1/raw/main/properties-reader.gradle'
@@ -10,7 +10,7 @@ sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
 
 archivesBaseName = project.archives_base_name
-version = "${project.mod_version}+${minecraft_version}" as Object
+version = "${project.mod_version}+${project.minecraft_version}"
 group = project.maven_group
 
 repositories {
@@ -19,16 +19,12 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
-//	maven {
-//		name "modrinth"
-//		url "https://api.modrinth.com/maven"
-//	}
 	maven {
-		url = "https://storage.googleapis.com/devan-maven/"
+		name "modrinth"
+		url "https://api.modrinth.com/maven"
 	}
 	maven {
-		name = "stashymane's repo"
-		url = "https://repo.stashy.dev/releases"
+		url "https://artifactory.kow08absty.com/artifactory/fabricmc"
 	}
 }
 
@@ -46,8 +42,7 @@ dependencies {
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 
-//	modCompileOnlyApi files("run/extrasounds-2.3.1+1.19.2-1.19.1.jar")
-	modCompileOnlyApi "dev.stashy:extra-sounds:${project.extrasounds_version}"
+	modCompileOnly "dev.stashy:extra-sounds:${project.extrasounds_version}"
 }
 
 processResources {
@@ -60,7 +55,7 @@ processResources {
 
 tasks.withType(JavaCompile).configureEach {
 	// Minecraft 1.18 (1.18-pre2) upwards uses Java 17.
-	it.options.release = 17
+	it.options.release.set(Integer.parseInt(targetCompatibility))
 }
 
 java {
